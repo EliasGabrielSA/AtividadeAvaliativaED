@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 	char path[100];
 	int numPac;
 
-	Paciente vetPac[numPac];
+	Paciente vetPac[] = calloc(numPac, sizeof(Paciente));
 	Paciente *vetPacPointer = vetPac;
 	//Paciente *vetPointer = vetPac;
 
@@ -42,5 +42,6 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
+	free(vetPac);
 	fclose(ptrfile);
 }
