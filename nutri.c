@@ -6,7 +6,7 @@ void lerArquivoPacientes(FILE *ptrFile, Paciente vetPac[], int numPac)
 
 	for (int i = 0; i < numPac; i++)
 	{
-		fscanf(ptrFile, "%[^,], %lf, %d", vetPac[i].nome, &vetPac[i].altura, &vetPac[i].peso);
+		(fscanf(ptrFile, "%[^,], %lf, %d", vetPac[i].nome, &vetPac[i].altura, &vetPac[i].peso) =! EOF;
 	}
 }
 
