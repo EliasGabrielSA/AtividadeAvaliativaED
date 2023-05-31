@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "nutri.h"
 
 void lerArquivoPacientes(FILE *ptrFile, Paciente vetPac[], int numPac)
 {
