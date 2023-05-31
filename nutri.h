@@ -5,7 +5,7 @@ struct _nutriPac
 {
 	char nome[30];
 	double altura;
-	double peso;
+	int peso;
 	double IMC;
 };
 

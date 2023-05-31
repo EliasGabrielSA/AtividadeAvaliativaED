@@ -42,11 +42,11 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	lerArquivoPacientes(ptrfile, Paciente vetPac[numPac], numPac);
+	lerArquivoPacientes(ptrfile, &vetPac[numPac], numPac);
 
 	for (int i = 0; i < numPac; i++)
 	{
-		vetPac[i].IMC = calcularIMC(Paciente vetPac[i]);
+		calcularIMC(&vetPac[i]);
 	}
 
 	for (int i = 0; i < numPac; i++)
