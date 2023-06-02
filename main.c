@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	lerArquivoPacientes(ptrfile, &vetPac[numPac], numPac);
+	lerArquivoPacientes(ptrfile, vetPac, numPac);
 
 	for (int i = 0; i < numPac; i++)
 	{
