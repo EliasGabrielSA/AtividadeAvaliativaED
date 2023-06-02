@@ -37,6 +37,7 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "files.associations": {
     "stdlib.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "nutri.h": "c"
   }
 }
