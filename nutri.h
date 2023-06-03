@@ -3,10 +3,10 @@
 
 struct _nutriPac
 {
-	char nome[30];
-	double altura;
-	int peso;
-	double IMC;
+	char nome[50];
+	float altura;
+	float peso;
+	float IMC;
 };
 
 typedef struct _nutriPac Paciente;

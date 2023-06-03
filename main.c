@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	scanf("%s", path);
 	scanf("%d", &numPac);
 
-	Paciente *vetPac = calloc(numPac,sizeof(Paciente));
+	Paciente *vetPac = calloc(numPac + 1,sizeof(Paciente));
 	// Paciente *vetPointer = vetPac;
 
 	if (numPac < 1)
@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
 	{
 		mostrarDadosPaciente(vetPac[i]);
 	}
+	printf("----------------------------------------");
 
 	free(vetPac);
 	fclose(ptrfile);
